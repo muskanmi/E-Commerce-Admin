@@ -1,38 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# E-Commerce Application - Seller Dashboard 
 
-## Getting Started
+It is an E-commerce web application created using ReactJS which can be used to browse, explore, and buy various types of products.
 
-First, run the development server:
+This repository contains the source code of the Seller Dashboard of the webapp.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+The source code for the frontend of the application is present [here](https://github.com/muskanmi/E-Commerce).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Features:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- **User Authentication:** The sellers of the platform can signup & login on this dashboard to perform all the desired activities required by them for their product listing. (User authentication is being performed with the help of **Google Auth** in this application).
+- Sellers can add new categories of products or product lines. 
+- Sellers can add new products to their product listings for various categories.
+- Sellers can also find the details of all the orders received by them.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tools & Technology Used:
 
-## Learn More
+- React.js
+- Next.js
+- Tailwind CSS
+- HTML
+- CSS
+- Javascript
+- MongoDB
+- Google Auth
+- Stripe Payments
+- Web APIs
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Prerequisites:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+* React.js Version: **18.2.0**
+* Next.js Version: **13.3.0**
+* NPM Version: **9.6.2**
+* You also need to have Mongo database setup using Mongo Atlas.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Instructions:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+You can follow the below steps to run the seller dashboard application in your system's local environment:
+
+1. Get the source code on your pc via git.
+
+    ```shell
+    git clone https://github.com/muskanmi/E-Commerce-Admin
+    ```
+
+2.  Now, navigate inside the folder through your terminal.
+
+    ```shell
+    cd E-Commerce-Admin
+    ```
+
+3. Next, you need to create a configuration file named as `.env` at the root of the folder (where package.json file is present).
+
+4. Then, enter the following statements after adding the values of appropriate configurations like *Google Auth ID*, *Google Auth Secret*, *MongoDB URI*, *AWS S3 Bucket credentials* in this newly created `.env` file:
+
+    ```js
+        GOOGLE_ID = ""
+        GOOGLE_SECRET = ""
+        MONGODB_URI = ""
+        S3_ACCESS_KEY = ""
+        S3_SECRET_ACCESS_KEY = ""
+    ```
+
+5. Next, install the required dependencies by running the following command:
+
+    ```shell
+    npm install
+    ```
+
+6. Finally, start the application by running:
+
+    ```shell
+    npm start
+    ```
+
+7. Voila! the admin server is ready for use. You can run it at [http://127.0.0.1:3000/](http://127.0.0.1:3000/).
+
+8. You can now head over to the frontend repository by clicking [here](https://github.com/muskanmi/E-Commerce) to understand the steps to be followed for starting the ecommerce application.
+
+
+***Note:*** The products displayed in the web application are just for reference and do not correspond to any real products.
+
+
+#### :small_blue_diamond: Please do give a ⭐️ if you find this project useful.
+
